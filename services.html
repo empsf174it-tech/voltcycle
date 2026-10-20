@@ -1,0 +1,770 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Services & Guides — Voltcycle Electric Bike Buying Resources</title>
+  <meta name="description" content="Explore Voltcycle e-bike buying guides, printable pre-purchase inspection checklist, test-ride proving ground finder, battery safety tips, and plans.">
+  
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%23CCFF00'/><path d='M50 15 L25 55 L48 55 L42 85 L75 45 L52 45 Z' fill='%23000'/></svg>">
+
+  <!-- Phosphor Icons CDN -->
+  <script src="https://unpkg.com/@phosphor-icons/web"></script>
+  
+  <!-- GA Placeholder -->
+  <!-- GA_TAG -->
+
+  <!-- Global Stylesheet -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin="">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <!-- Skip to Content Accessibility Link -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- =========================================================================
+       GLOBAL NAVBAR (Identical across all 4 pages)
+       ========================================================================= -->
+  <header class="site-header">
+    <div class="container navbar">
+      <a href="index.html" class="nav-brand" aria-label="Voltcycle Homepage">
+        <span class="brand-mark"><i class="ph-bold ph-lightning"></i></span>
+        <span>VOLT<span class="brand-accent">CYCLE</span></span>
+      </a>
+
+      <!-- Desktop Nav Items (> 1024px) -->
+      <nav class="nav-desktop" aria-label="Main Navigation">
+        <ul class="nav-menu">
+          <li class="nav-item">
+            <a href="index.html" class="nav-link">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="about.html" class="nav-link">About</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a href="services.html" class="nav-link active" aria-haspopup="true" aria-expanded="false">
+              Services <i class="ph ph-caret-down"></i>
+            </a>
+            <ul class="dropdown-menu">
+              <li>
+                <a href="#guides" class="dropdown-link">
+                  <i class="ph ph-notebook"></i> Buying Guides
+                </a>
+              </li>
+              <li>
+                <a href="#comparisons" class="dropdown-link">
+                  <i class="ph ph-scales"></i> Model Comparisons
+                </a>
+              </li>
+              <li>
+                <a href="#test-ride" class="dropdown-link">
+                  <i class="ph ph-map-pin"></i> Test-Ride Finder
+                </a>
+              </li>
+              <li>
+                <a href="#safety" class="dropdown-link">
+                  <i class="ph ph-shield-check"></i> Maintenance & Safety
+                </a>
+              </li>
+              <li>
+                <a href="#plans" class="dropdown-link">
+                  <i class="ph ph-star"></i> Premium Plans
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a href="contact.html" class="nav-link">Contact</a>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- Nav Actions -->
+      <div class="nav-actions">
+        <a href="login.html" class="btn btn-primary btn-sm"><i class="ph-bold ph-sign-in"></i> Log in</a>
+        <button type="button" class="hamburger-btn" id="hamburgerBtn" aria-label="Open mobile navigation menu" aria-expanded="false">
+          <i class="ph ph-list"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Slide Drawer (<= 1024px) -->
+  <div class="nav-drawer-backdrop" id="drawerBackdrop"></div>
+  <aside class="nav-drawer" id="navDrawer" aria-label="Mobile Navigation Drawer">
+    <div class="drawer-header">
+      <div class="nav-brand">
+        <span class="brand-mark"><i class="ph-bold ph-lightning"></i></span>
+        <span>VOLT<span class="brand-accent">CYCLE</span></span>
+      </div>
+      <button type="button" class="drawer-close-btn" id="drawerCloseBtn" aria-label="Close menu">
+        <i class="ph ph-x"></i>
+      </button>
+    </div>
+
+    <ul class="drawer-links">
+      <li><a href="index.html" class="drawer-link">Home</a></li>
+      <li><a href="about.html" class="drawer-link">About Us</a></li>
+      <li>
+        <button type="button" class="drawer-link drawer-accordion-btn" aria-expanded="false">
+          <span>Services</span> <i class="ph ph-caret-down"></i>
+        </button>
+        <ul class="drawer-sublinks">
+          <li><a href="#guides" class="drawer-sublink"><i class="ph ph-notebook"></i> Buying Guides</a></li>
+          <li><a href="#comparisons" class="drawer-sublink"><i class="ph ph-scales"></i> Comparisons</a></li>
+          <li><a href="#test-ride" class="drawer-sublink"><i class="ph ph-map-pin"></i> Test-Ride Centers</a></li>
+          <li><a href="#safety" class="drawer-sublink"><i class="ph ph-shield-check"></i> Safety Tips</a></li>
+          <li><a href="#plans" class="drawer-sublink"><i class="ph ph-star"></i> Premium Plans</a></li>
+        </ul>
+      </li>
+      <li><a href="contact.html" class="drawer-link">Contact & Track Studio</a></li>
+    </ul>
+
+    <div style="margin-top: auto; padding-top: var(--space-6); border-top: 1px solid var(--color-primary-border);">
+      <a href="login.html" class="btn btn-primary" style="width: 100%;"><i class="ph-bold ph-sign-in"></i> Log in</a>
+      <a href="signup.html" class="btn btn-secondary" style="width: 100%; margin-top: var(--space-3);">Create account</a>
+    </div>
+  </aside>
+
+  <!-- =========================================================================
+       MAIN CONTENT: SERVICES PAGE (Minimum 5 Sections)
+       ========================================================================= -->
+  <main id="main-content">
+
+    <!-- -----------------------------------------------------------------------
+         SECTION 1: BUYING GUIDES (#guides)
+         Downloadable / Printable Pre-Purchase Checklist
+         ----------------------------------------------------------------------- -->
+    <section class="page-hero page-hero--services">
+      <div class="hero-floaters" aria-hidden="true">
+        <span class="float-orb float-orb--1"></span>
+        <span class="float-orb float-orb--2"></span>
+        <span class="float-chip float-chip--1"><i class="ph-duotone ph-notebook"></i></span>
+        <span class="float-chip float-chip--2"><i class="ph-duotone ph-scales"></i></span>
+        <span class="float-chip float-chip--3"><i class="ph-duotone ph-map-pin"></i></span>
+        <span class="float-chip float-chip--4"><i class="ph-duotone ph-shield-check"></i></span>
+      </div>
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag"><i class="ph ph-notebook"></i> Comprehensive Advisory</span>
+          <h1>Electric Bike Buying Guides & Pre-Purchase Tools</h1>
+          <p class="section-subtitle">
+            Never sign a purchase order or order a bike online without running through our certified 10-point inspection protocol.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="guides">
+      <div class="container">
+
+        <div style="background:var(--color-primary-surface); border:1px solid var(--color-primary-border); border-radius:var(--radius-global); padding:var(--space-8); box-shadow:var(--shadow-global); margin-bottom:var(--space-8);">
+          <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:var(--space-4); margin-bottom:var(--space-6);">
+            <div>
+              <h2 style="font-size:1.45rem; margin-bottom:4px; text-align:left;">The Essential E-Bike Pre-Purchase Checklist</h2>
+              <span style="font-size:0.85rem; color:var(--color-secondary);">Take this checklist to your local bike shop or verify each spec before buying online.</span>
+            </div>
+            
+            <button type="button" class="btn btn-primary btn-sm" onclick="window.print()">
+              <i class="ph ph-printer"></i> Print / Save Checklist (PDF)
+            </button>
+          </div>
+
+          <div class="checklist-printable" style="background:var(--color-primary); border:1px solid var(--color-primary-border); border-radius:var(--radius-global); padding:var(--space-6);">
+            <div class="stack-mobile" style="display:grid; grid-template-columns:1fr 1fr; gap:var(--space-4);">
+              <label class="checkbox-card" style="align-items:flex-start;">
+                <input type="checkbox" style="margin-top:4px;">
+                <div>
+                  <strong style="color:#FFF; display:block; font-size:0.92rem;">1. UL 2849 Electrical Safety Certification</strong>
+                  <span style="font-size:0.8rem; color:var(--color-secondary);">Verify the battery, BMS, charger, and motor carry genuine UL or CE certification badges.</span>
+                </div>
+              </label>
+
+              <label class="checkbox-card" style="align-items:flex-start;">
+                <input type="checkbox" style="margin-top:4px;">
+                <div>
+                  <strong style="color:#FFF; display:block; font-size:0.92rem;">2. Hydraulic vs Mechanical Disc Brakes</strong>
+                  <span style="font-size:0.8rem; color:var(--color-secondary);">Electric bikes weigh 45–70 lbs. Hydraulic brakes provide crucial 35% shorter stopping distances.</span>
+                </div>
+              </label>
+
+              <label class="checkbox-card" style="align-items:flex-start;">
+                <input type="checkbox" style="margin-top:4px;">
+                <div>
+                  <strong style="color:#FFF; display:block; font-size:0.92rem;">3. Torque Sensor vs Basic Cadence Sensor</strong>
+                  <span style="font-size:0.8rem; color:var(--color-secondary);">Torque sensors measure how hard you push; cadence sensors act like an abrupt on/off switch.</span>
+                </div>
+              </label>
+
+              <label class="checkbox-card" style="align-items:flex-start;">
+                <input type="checkbox" style="margin-top:4px;">
+                <div>
+                  <strong style="color:#FFF; display:block; font-size:0.92rem;">4. Removable Battery with Key Lock</strong>
+                  <span style="font-size:0.8rem; color:var(--color-secondary);">Essential if you live in an apartment or need to charge indoors during freezing winter months.</span>
+                </div>
+              </label>
+
+              <label class="checkbox-card" style="align-items:flex-start;">
+                <input type="checkbox" style="margin-top:4px;">
+                <div>
+                  <strong style="color:#FFF; display:block; font-size:0.92rem;">5. Frame Standover Height & Reach</strong>
+                  <span style="font-size:0.8rem; color:var(--color-secondary);">Ensure you can put both feet flat on the ground when dismounting quickly at red lights.</span>
+                </div>
+              </label>
+
+              <label class="checkbox-card" style="align-items:flex-start;">
+                <input type="checkbox" style="margin-top:4px;">
+                <div>
+                  <strong style="color:#FFF; display:block; font-size:0.92rem;">6. Standard Non-Proprietary Components</strong>
+                  <span style="font-size:0.8rem; color:var(--color-secondary);">Ensure tires, tubes, chains, and brake pads use standard Shimano/SRAM sizes serviceable by any mechanic.</span>
+                </div>
+              </label>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- -----------------------------------------------------------------------
+         SECTION 2: MODEL COMPARISONS & REQUEST A HEAD-TO-HEAD (#comparisons)
+         ----------------------------------------------------------------------- -->
+    <section id="comparisons" style="background:var(--color-primary-card);">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag"><i class="ph ph-scales"></i> Custom Dyno Head-to-Head</span>
+          <h2>Request An In-Depth Model Comparison</h2>
+          <p class="section-subtitle">
+            Can't decide between two specific electric bikes? Submit your shortlisted models and our lab will analyze gearing ratios, payload limits, and real hill climb times.
+          </p>
+        </div>
+
+        <div style="max-width:760px; margin:0 auto; background:var(--color-primary-surface); border:1px solid var(--color-primary-border); border-radius:var(--radius-global); padding:var(--space-8); box-shadow:var(--shadow-global);">
+          <form id="comparisonRequestForm">
+            <div class="stack-mobile" style="display:grid; grid-template-columns:1fr 1fr; gap:var(--space-4);">
+              <div class="form-group">
+                <label for="compModelA" class="form-label">First Model Under Consideration:</label>
+                <select id="compModelA" class="form-select" required>
+                  <option value="">Select Model 1</option>
+                  <option value="apex-urban-x">Apex Urban-X Commuter</option>
+                  <option value="terrapeak-trail-9">TerraPeak Enduro Trail 9</option>
+                  <option value="haulcraft-cargo-max">HaulCraft Cargo Max</option>
+                  <option value="kitefold-aero-1">Kite Mobility AeroFold One</option>
+                  <option value="aeroshift-neo-step">AeroShift NeoStep Low-Entry</option>
+                  <option value="voltstrider-velo-8">VoltStrider Strider Velo 8</option>
+                  <option value="summitridge-enduro">SummitRidge Pro E-8</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="compModelB" class="form-label">Second Model Under Consideration:</label>
+                <select id="compModelB" class="form-select" required>
+                  <option value="">Select Model 2</option>
+                  <option value="voltstrider-velo-8">VoltStrider Strider Velo 8</option>
+                  <option value="apex-urban-x">Apex Urban-X Commuter</option>
+                  <option value="terrapeak-trail-9">TerraPeak Enduro Trail 9</option>
+                  <option value="haulcraft-cargo-max">HaulCraft Cargo Max</option>
+                  <option value="kitefold-aero-1">Kite Mobility AeroFold One</option>
+                  <option value="urbanporter-compact-cargo">UrbanPorter Compact Cargo</option>
+                  <option value="nomadfold-express">Nomad Fold Express</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="compRiderContext" class="form-label">Your Daily Route & Rider Priorities:</label>
+              <textarea id="compRiderContext" rows="3" class="form-control" placeholder="E.g., 28 miles round-trip in Portland with a 12% hill on the way home, carrying a 25 lb backpack. Need to know which motor runs cooler." required></textarea>
+            </div>
+
+            <div class="form-group">
+              <label for="compEmail" class="form-label">Your Email For The Comparison Breakdown:</label>
+              <input type="email" id="compEmail" class="form-control" placeholder="you@domain.com" required>
+            </div>
+
+            <button type="submit" class="btn btn-primary" style="width:100%;" id="compSubmitBtn">
+              Generate Lab Head-to-Head Comparison <i class="ph ph-arrow-right"></i>
+            </button>
+
+            <!-- Inline Success Alert -->
+            <div id="compSuccessAlert" style="display:none; margin-top:var(--space-4); background:rgba(16, 185, 129, 0.1); border:1px solid var(--color-success); border-radius:var(--radius-global); padding:var(--space-4); text-align:center; color:#FFF;">
+              <i class="ph-bold ph-check-circle" style="color:var(--color-success); font-size:1.4rem;"></i>
+              <strong style="display:block; margin:4px 0;">Comparison Report Dispatched!</strong>
+              <span style="font-size:0.85rem; color:var(--color-secondary);">Our engineering team has processed the telemetry comparison for these two models. Check your inbox for the spec-by-spec breakdown.</span>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- -----------------------------------------------------------------------
+         SECTION 3: TEST-RIDE FINDER (#test-ride)
+         Validated city or postcode search, demo shops/events, map iframe
+         ----------------------------------------------------------------------- -->
+    <section id="test-ride">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag"><i class="ph ph-map-pin"></i> Certified Proving Tracks</span>
+          <h2>Test-Ride Center & Proving Ground Finder</h2>
+          <p class="section-subtitle">
+            There is no substitute for saddle time. Search our network of certified partner test tracks to ride models up real test ramps before buying.
+          </p>
+        </div>
+
+        <div class="finder-wrapper">
+          <!-- Search Row -->
+          <div class="finder-search-row">
+            <input type="text" id="finderSearchInput" class="form-control" placeholder="Search by city (e.g., Seattle, Denver, SF) or postcode (e.g. 98109)..." aria-label="Search test centers">
+            <button type="button" class="btn btn-primary" id="finderSearchBtn">
+              <i class="ph ph-magnifying-glass"></i> Search
+            </button>
+          </div>
+
+          <div class="finder-results-grid">
+            <!-- Results List -->
+            <div id="centersListWrap" class="centers-list">
+              <!-- Injected dynamically via script -->
+            </div>
+
+            <!-- Interactive Map (Leaflet + dark tiles) -->
+            <div class="centers-map-col">
+              <div class="centers-map-shell">
+                <div id="centersMap" class="centers-map" role="region" aria-label="Map of Voltcycle partner test centers"></div>
+                <div class="map-overlay-chip"><span class="live-dot"></span> <span id="mapCountLabel">6 certified centers</span></div>
+                <button type="button" class="map-reset-btn" id="mapResetBtn" aria-label="Show all centers"><i class="ph ph-arrows-out-simple"></i></button>
+              </div>
+              <div class="map-footnote">
+                <i class="ph ph-info"></i> Select a center to fly to it. Partner tracks feature enclosed grade ramps and gravel transition loops.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- -----------------------------------------------------------------------
+         SECTION 4: MAINTENANCE & SAFETY TIPS (#safety)
+         Battery charging safety, helmets, hydraulic brakes, chain care
+         ----------------------------------------------------------------------- -->
+    <section id="safety" style="background:var(--color-primary-card);">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag"><i class="ph ph-shield-check"></i> Rider Longevity & Protocol</span>
+          <h2>Maintenance & Battery Safety Master Guide</h2>
+          <p class="section-subtitle">
+            High-voltage lithium batteries and high-torque motors require disciplined maintenance to stay safe and preserve battery health for 5+ years.
+          </p>
+        </div>
+
+        <div class="trio-grid">
+          <!-- Safety Card 1 -->
+          <div style="background:var(--color-primary-surface); border:1px solid var(--color-primary-border); border-top:4px solid var(--color-accent); border-radius:var(--radius-global); padding:var(--space-6);">
+            <i class="ph-bold ph-battery-charging" style="font-size:2rem; color:var(--color-accent); margin-bottom:var(--space-3);"></i>
+            <h3 style="font-size:1.15rem; margin-bottom:var(--space-2);">1. Charging Fire Safety</h3>
+            <ul style="list-style:none; font-size:0.84rem; color:var(--color-secondary); display:flex; flex-direction:column; gap:8px;">
+              <li><i class="ph-bold ph-check" style="color:var(--color-accent);"></i> <strong>Never charge unattended:</strong> Do not leave plugged in overnight while sleeping.</li>
+              <li><i class="ph-bold ph-check" style="color:var(--color-accent);"></i> <strong>OEM chargers only:</strong> Cheap aftermarket bricks lack proper thermal cutoff circuits.</li>
+              <li><i class="ph-bold ph-check" style="color:var(--color-accent);"></i> <strong>Inspect casing:</strong> If your battery is dropped or shows physical dents, retire immediately.</li>
+            </ul>
+          </div>
+
+          <!-- Safety Card 2 -->
+          <div style="background:var(--color-primary-surface); border:1px solid var(--color-primary-border); border-top:4px solid var(--color-accent); border-radius:var(--radius-global); padding:var(--space-6);">
+            <i class="ph-bold ph-disc" style="font-size:2rem; color:var(--color-accent); margin-bottom:var(--space-3);"></i>
+            <h3 style="font-size:1.15rem; margin-bottom:var(--space-2);">2. Hydraulic Brake Bleeds</h3>
+            <ul style="list-style:none; font-size:0.84rem; color:var(--color-secondary); display:flex; flex-direction:column; gap:8px;">
+              <li><i class="ph-bold ph-check" style="color:var(--color-accent);"></i> <strong>Check pad thickness:</strong> Replace brake pads before they wear below 1.0mm thickness.</li>
+              <li><i class="ph-bold ph-check" style="color:var(--color-accent);"></i> <strong>Mineral oil bleeds:</strong> Bleed hydraulic brake lines every 12 months to prevent spongy levers.</li>
+              <li><i class="ph-bold ph-check" style="color:var(--color-accent);"></i> <strong>Inspect rotor truing:</strong> Ensure 180mm/203mm rotors do not rub against callipers.</li>
+            </ul>
+          </div>
+
+          <!-- Safety Card 3 -->
+          <div style="background:var(--color-primary-surface); border:1px solid var(--color-primary-border); border-top:4px solid var(--color-accent); border-radius:var(--radius-global); padding:var(--space-6);">
+            <i class="ph-bold ph-gear" style="font-size:2rem; color:var(--color-accent); margin-bottom:var(--space-3);"></i>
+            <h3 style="font-size:1.15rem; margin-bottom:var(--space-2);">3. Mid-Drive Drivetrain Care</h3>
+            <ul style="list-style:none; font-size:0.84rem; color:var(--color-secondary); display:flex; flex-direction:column; gap:8px;">
+              <li><i class="ph-bold ph-check" style="color:var(--color-accent);"></i> <strong>Ease pedal pressure:</strong> Pause pedaling slightly during gear shifts to protect cassette teeth.</li>
+              <li><i class="ph-bold ph-check" style="color:var(--color-accent);"></i> <strong>Use e-bike chains:</strong> Reinforced pin chains (e.g. KMC e10/e11) withstand 90Nm motor torque.</li>
+              <li><i class="ph-bold ph-check" style="color:var(--color-accent);"></i> <strong>Lubricate weekly:</strong> Dry-lube for summer dust, wet-lube for rainy winter commuting.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- -----------------------------------------------------------------------
+         SECTION 5: PREMIUM GUIDE PLANS (#plans)
+         Transparent tiered pricing cards (Demo only, no payment)
+         ----------------------------------------------------------------------- -->
+    <section id="plans">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag"><i class="ph ph-star"></i> Advisory Programs</span>
+          <h2>Voltcycle Buyer Consultation Tiers</h2>
+          <p class="section-subtitle">
+            Need bespoke fleet planning or one-on-one commuter matching? Explore our transparent plans. <em>(Demo preview only — no actual payment processed).</em>
+          </p>
+        </div>
+
+        <div class="pricing-grid">
+          <!-- Plan 1 -->
+          <div class="pricing-card">
+            <h3 style="font-size:1.2rem; margin-bottom:2px;">Free Buyer Guide</h3>
+            <p style="font-size:0.84rem; color:var(--color-secondary);">Open access to our entire tested database and range calculators.</p>
+            <div class="price-value">$0</div>
+            <span style="font-size:0.75rem; color:var(--color-secondary-dim);">Forever free public access</span>
+
+            <ul class="plan-features-list">
+              <li><i class="ph-bold ph-check"></i> Full access to 48+ e-bike lab benchmarks</li>
+              <li><i class="ph-bold ph-check"></i> Interactive Range & Budget Matcher tool</li>
+              <li><i class="ph-bold ph-check"></i> Standardized side-by-side spec matrices</li>
+              <li><i class="ph-bold ph-check"></i> Downloadable PDF pre-purchase checklist</li>
+            </ul>
+
+            <a href="index.html#matcher" class="btn btn-secondary" style="margin-top:auto; width:100%;">Get Started Free</a>
+          </div>
+
+          <!-- Plan 2 (Featured) -->
+          <div class="pricing-card featured">
+            <span class="pricing-badge">MOST POPULAR</span>
+            <h3 style="font-size:1.2rem; margin-bottom:2px;">Rider Pro Pass</h3>
+            <p style="font-size:0.84rem; color:var(--color-secondary);">Bespoke commuter route consultation and private test track booking.</p>
+            <div class="price-value">$29 <span style="font-size:1rem; color:var(--color-secondary-dim); font-weight:400;">/one-time</span></div>
+            <span style="font-size:0.75rem; color:var(--color-accent);">Includes 45-min Zoom gear advisory</span>
+
+            <ul class="plan-features-list">
+              <li><i class="ph-bold ph-check"></i> Everything in Free Buyer Guide</li>
+              <li><i class="ph-bold ph-check"></i> 1-on-1 route elevation & battery audit</li>
+              <li><i class="ph-bold ph-check"></i> VIP test-ride priority booking at demo tracks</li>
+              <li><i class="ph-bold ph-check"></i> Exclusive partner discount coupon codes ($100–$250)</li>
+            </ul>
+
+            <button type="button" class="btn btn-primary demo-plan-btn" style="margin-top:auto; width:100%;" data-plan="Rider Pro Pass">
+              Select Pro Pass (Demo)
+            </button>
+          </div>
+
+          <!-- Plan 3 -->
+          <div class="pricing-card">
+            <h3 style="font-size:1.2rem; margin-bottom:2px;">Family & Fleet Advisory</h3>
+            <p style="font-size:0.84rem; color:var(--color-secondary);">For households replacing two vehicles or local businesses buying cargo bikes.</p>
+            <div class="price-value">$99 <span style="font-size:1rem; color:var(--color-secondary-dim); font-weight:400;">/one-time</span></div>
+            <span style="font-size:0.75rem; color:var(--color-secondary-dim);">Complete fleet ROI analysis</span>
+
+            <ul class="plan-features-list">
+              <li><i class="ph-bold ph-check"></i> Multi-bike cargo & passenger configuration plan</li>
+              <li><i class="ph-bold ph-check"></i> Commercial carrier insurance guidance</li>
+              <li><i class="ph-bold ph-check"></i> Dedicated fleet maintenance schedule & spare parts list</li>
+              <li><i class="ph-bold ph-check"></i> Direct phone support with lead engineer</li>
+            </ul>
+
+            <button type="button" class="btn btn-secondary demo-plan-btn" style="margin-top:auto; width:100%;" data-plan="Family & Fleet Advisory">
+              Select Fleet Plan (Demo)
+            </button>
+          </div>
+        </div>
+
+        <div style="font-size:0.75rem; color:var(--color-secondary-dim); text-align:center; margin-top:var(--space-6);">
+          *All consultation plans are simulated demo tiers for website evaluation purposes. No payments are accepted.
+        </div>
+      </div>
+    </section>
+
+    <!-- -----------------------------------------------------------------------
+         SECTION 6: SERVICES FAQ
+         ----------------------------------------------------------------------- -->
+    <section id="services-faq" style="background:var(--color-primary-card);">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag"><i class="ph ph-question"></i> Help & Guidance</span>
+          <h2>Services & Testing FAQ</h2>
+          <p class="section-subtitle">Common questions regarding our test-ride network and custom comparison reports.</p>
+        </div>
+
+        <div class="faq-accordion">
+          <div class="faq-item">
+            <button type="button" class="faq-question-btn" aria-expanded="false">
+              <span>Do I need a helmet to test ride at partner demo tracks?</span>
+              <i class="ph ph-caret-down faq-icon"></i>
+            </button>
+            <div class="faq-answer-body">
+              <div class="faq-answer-content">
+                Yes. Helmets certified to CPSC or EN 1078 safety standards are mandatory for all test rides at our partner tracks. If you do not bring your own, sanitized loaner helmets are provided free of charge.
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button type="button" class="faq-question-btn" aria-expanded="false">
+              <span>Can I request test-bench data on a bike not listed on the website?</span>
+              <i class="ph ph-caret-down faq-icon"></i>
+            </button>
+            <div class="faq-answer-body">
+              <div class="faq-answer-content">
+                Yes! Use our <a href="contact.html" style="color:var(--color-accent); text-decoration:underline;">Contact page</a> and select "Model Advice & Testing Request." If our readers show high interest in a new release, we acquire a production unit and queue it for dyno evaluation.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- =========================================================================
+       GLOBAL FOOTER (Identical across all 4 pages)
+       ========================================================================= -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand-col">
+          <a href="index.html" class="nav-brand">
+            <span class="brand-mark"><i class="ph-bold ph-lightning"></i></span>
+            <span>VOLT<span class="brand-accent">CYCLE</span></span>
+          </a>
+          <p>
+            Independent laboratory testing, dyno benchmarks, and verified rider telemetry. Helping cyclists discover high-performing electric bicycles with honest real-world range expectations.
+          </p>
+          <div class="social-row" aria-label="Follow Voltcycle">
+            <a href="#" class="social-btn" aria-label="Voltcycle on Instagram" title="Instagram"><i class="ph ph-instagram-logo"></i></a>
+            <a href="#" class="social-btn" aria-label="Voltcycle on YouTube" title="YouTube"><i class="ph ph-youtube-logo"></i></a>
+            <a href="#" class="social-btn" aria-label="Voltcycle on X" title="X"><i class="ph ph-x-logo"></i></a>
+            <a href="#" class="social-btn" aria-label="Voltcycle on Facebook" title="Facebook"><i class="ph ph-facebook-logo"></i></a>
+            <a href="#" class="social-btn" aria-label="Voltcycle on LinkedIn" title="LinkedIn"><i class="ph ph-linkedin-logo"></i></a>
+            <a href="#" class="social-btn" aria-label="Voltcycle on TikTok" title="TikTok"><i class="ph ph-tiktok-logo"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-links-col">
+          <h4>Navigation</h4>
+          <ul class="footer-links-list">
+            <li><a href="index.html" class="footer-link">Home</a></li>
+            <li><a href="about.html" class="footer-link">About Our Lab</a></li>
+            <li><a href="services.html" class="footer-link">Services & Guides</a></li>
+            <li><a href="contact.html" class="footer-link">Contact & Studio</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-links-col">
+          <h4>Interactive Tools</h4>
+          <ul class="footer-links-list">
+            <li><a href="index.html#matcher" class="footer-link">Range & Budget Matcher</a></li>
+            <li><a href="index.html#models" class="footer-link">Top Models Grid</a></li>
+            <li><a href="index.html#explainer" class="footer-link">Motor & Battery Explainer</a></li>
+            <li><a href="services.html#test-ride" class="footer-link">Test-Ride Finder</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-links-col">
+          <h4>Editorial & Legal</h4>
+          <ul class="footer-links-list">
+            <li><a href="about.html#methodology" class="footer-link">Scoring Methodology</a></li>
+            <li><a href="services.html#safety" class="footer-link">Battery Charging Safety</a></li>
+            <li><a href="services.html#plans" class="footer-link">Premium Advisory Plans</a></li>
+            <li><a href="contact.html" class="footer-link">Submit Model For Test</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Mandatory Affiliate & Demo Disclosure Box -->
+      <div class="footer-disclosure-box">
+        <!-- AFFILIATE_LINK -->
+        <strong>Editorial Independence & Affiliate Disclosure:</strong> Some links on this site may be affiliate links. Voltcycle earns a referral commission when you purchase through partner links at zero extra cost to you. All test scores and ratings remain strictly independent. Voltcycle is a demo brand; all models, prices, scores, specifications, and reviews are placeholder data for evaluation purposes.
+      </div>
+
+      <div class="footer-bottom">
+        <div>&copy; 2026 Voltcycle. All rights reserved. Built with plain HTML/CSS/JS.</div>
+        <div style="display:flex; gap:var(--space-4);">
+          <span>Privacy Policy</span>
+          <span>Terms of Service</span>
+          <span>Affiliate Policy</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script>
+    // Services Page Interactive Logic (Test-ride finder & head-to-head request)
+    document.addEventListener('DOMContentLoaded', () => {
+      // 1. Comparison Request Form
+      const compForm = document.getElementById('comparisonRequestForm');
+      const compSuccessAlert = document.getElementById('compSuccessAlert');
+      const compSubmitBtn = document.getElementById('compSubmitBtn');
+
+      if (compForm) {
+        compForm.addEventListener('submit', (e) => {
+          e.preventDefault();
+          compSubmitBtn.disabled = true;
+          compSubmitBtn.innerHTML = '<i class="ph ph-spinner ph-spin"></i> Processing telemetry...';
+          setTimeout(() => {
+            compForm.reset();
+            compSubmitBtn.disabled = false;
+            compSubmitBtn.innerHTML = 'Generate Lab Head-to-Head Comparison <i class="ph ph-arrow-right"></i>';
+            if (compSuccessAlert) compSuccessAlert.style.display = 'block';
+          }, 800);
+        });
+      }
+
+      // 2. Test-Ride Centers Finder
+      const searchInput = document.getElementById('finderSearchInput');
+      const searchBtn = document.getElementById('finderSearchBtn');
+      const listWrap = document.getElementById('centersListWrap');
+
+      // Interactive map: dark CARTO tiles + custom lime markers
+      let map = null, markerLayer = null;
+      const markers = {};
+      const allCenters = (window.VoltData && window.VoltData.testRideCenters) || [];
+      const pinIcon = L => L.divIcon({
+        className: 'vc-pin',
+        html: '<span class="vc-pin-pulse"></span><span class="vc-pin-dot"><i class="ph-fill ph-lightning"></i></span>',
+        iconSize: [36, 36], iconAnchor: [18, 18], popupAnchor: [0, -18]
+      });
+      if (window.L && document.getElementById('centersMap')) {
+        map = L.map('centersMap', { zoomControl: false, maxZoom: 16, scrollWheelZoom: false, attributionControl: true });
+        L.control.zoom({ position: 'bottomright' }).addTo(map);
+        // Esri Dark Gray Canvas: free, no API key. Base + labels layered separately.
+        const esri = 'https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/';
+        L.tileLayer(esri + 'World_Dark_Gray_Base/MapServer/tile/{z}/{y}/{x}', {
+          maxZoom: 16,
+          attribution: 'Tiles &copy; <a href="https://www.esri.com/">Esri</a> &mdash; Esri, HERE, Garmin, &copy; OpenStreetMap contributors'
+        }).addTo(map);
+        L.tileLayer(esri + 'World_Dark_Gray_Reference/MapServer/tile/{z}/{y}/{x}', { maxZoom: 16 }).addTo(map);
+        markerLayer = L.layerGroup().addTo(map);
+        map.on('click', () => map.scrollWheelZoom.enable());
+      }
+
+      const setActiveCard = (id) => {
+        listWrap.querySelectorAll('.center-card').forEach(card =>
+          card.classList.toggle('is-active', card.dataset.centerId === id));
+        Object.entries(markers).forEach(([mid, m]) =>
+          m.getElement() && m.getElement().classList.toggle('is-active', mid === id));
+      };
+
+      const focusCenter = (id) => {
+        const m = markers[id];
+        if (!map || !m) return;
+        map.flyTo(m.getLatLng(), 13, { duration: 1.2 });
+        m.openPopup();
+        setActiveCard(id);
+      };
+
+      const fitAll = (centers) => {
+        if (!map || !centers.length) return;
+        if (centers.length === 1) { map.setView([centers[0].lat, centers[0].lng], 12); return; }
+        map.fitBounds(L.latLngBounds(centers.map(c => [c.lat, c.lng])), { padding: [40, 40] });
+      };
+
+      const updateMap = (centers) => {
+        const label = document.getElementById('mapCountLabel');
+        if (label) label.textContent = `${centers.length} certified center${centers.length === 1 ? '' : 's'}`;
+        if (!map) return;
+        markerLayer.clearLayers();
+        Object.keys(markers).forEach(k => delete markers[k]);
+        centers.forEach(c => {
+          const m = L.marker([c.lat, c.lng], { icon: pinIcon(L), title: c.name })
+            .bindPopup(`
+              <div class="vc-popup">
+                <span class="vc-popup-city">${c.city}</span>
+                <strong>${c.name}</strong>
+                <span>${c.trackType}</span>
+                <a href="https://www.google.com/maps/dir/?api=1&destination=${encodeURIComponent(c.address)}" target="_blank" rel="noopener">Get directions <i class="ph ph-arrow-up-right"></i></a>
+              </div>`, { closeButton: false, maxWidth: 260 })
+            .on('click', () => {
+              setActiveCard(c.id);
+              const card = listWrap.querySelector(`[data-center-id="${c.id}"]`);
+              if (card) card.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+            });
+          markerLayer.addLayer(m);
+          markers[c.id] = m;
+        });
+        fitAll(centers);
+      };
+
+      const resetBtnMap = document.getElementById('mapResetBtn');
+      if (resetBtnMap) resetBtnMap.addEventListener('click', () => {
+        map && map.closePopup();
+        setActiveCard(null);
+        fitAll(Object.values(markers).length ? allCenters.filter(c => markers[c.id]) : allCenters);
+      });
+
+      listWrap && listWrap.addEventListener('click', (e) => {
+        const card = e.target.closest('.center-card');
+        if (card) focusCenter(card.dataset.centerId);
+      });
+      listWrap && listWrap.addEventListener('keydown', (e) => {
+        const card = e.target.closest('.center-card');
+        if (card && (e.key === 'Enter' || e.key === ' ')) { e.preventDefault(); focusCenter(card.dataset.centerId); }
+      });
+
+      const renderCenters = (query = '') => {
+        if (!listWrap || !window.VoltData || !window.VoltData.testRideCenters) return;
+        let centers = window.VoltData.testRideCenters;
+        if (query.trim()) {
+          const q = query.toLowerCase().trim();
+          centers = centers.filter(c => 
+            c.city.toLowerCase().includes(q) || 
+            c.postcode.toLowerCase().includes(q) || 
+            c.name.toLowerCase().includes(q)
+          );
+        }
+
+        if (centers.length === 0) {
+          listWrap.innerHTML = `
+            <div style="background:var(--color-primary); padding:var(--space-6); border-radius:var(--radius-global); text-align:center;">
+              <p style="color:var(--color-secondary);">No partner demo tracks matched "${query}". Displaying all certified partner centers.</p>
+              <button type="button" class="btn btn-secondary btn-sm" id="resetCentersBtn" style="margin-top:8px;">Show All Centers</button>
+            </div>
+          `;
+          const resetBtn = document.getElementById('resetCentersBtn');
+          if (resetBtn) resetBtn.addEventListener('click', () => {
+            if (searchInput) searchInput.value = '';
+            renderCenters();
+          });
+          updateMap(window.VoltData.testRideCenters);
+          return;
+        }
+
+        updateMap(centers);
+        listWrap.innerHTML = centers.map(c => `
+          <div class="center-card" data-center-id="${c.id}" tabindex="0" role="button" aria-label="Show ${c.name} on map">
+            <div style="display:flex; justify-content:space-between; align-items:flex-start; margin-bottom:4px;">
+              <h4 style="font-size:1.05rem; color:#FFF;">${c.name}</h4>
+              <span class="verified-pill"><i class="ph ph-map-pin"></i> ${c.postcode}</span>
+            </div>
+            <p style="font-size:0.84rem; color:var(--color-secondary); margin-bottom:6px;">${c.address}</p>
+            <div style="font-size:0.8rem; color:var(--color-secondary-dim); margin-bottom:6px;">
+              <strong>Hours:</strong> ${c.hours} · <strong>Phone:</strong> ${c.phone}
+            </div>
+            <div style="font-size:0.78rem; color:var(--color-accent); margin-bottom:8px;">
+              <strong>Track Profile:</strong> ${c.trackType}
+            </div>
+            <div style="font-size:0.75rem; color:var(--color-secondary-dim);">
+              <strong>Models In Fleet:</strong> ${c.modelsAvailable.join(', ')}
+            </div>
+          </div>
+        `).join('');
+      };
+
+      if (searchBtn && searchInput) {
+        searchBtn.addEventListener('click', () => renderCenters(searchInput.value));
+        searchInput.addEventListener('keydown', (e) => {
+          if (e.key === 'Enter') renderCenters(searchInput.value);
+        });
+      }
+
+      // Demo plan buttons
+      document.querySelectorAll('.demo-plan-btn').forEach(btn => {
+        btn.addEventListener('click', () => {
+          const plan = btn.dataset.plan;
+          alert(`You selected the "${plan}" (Simulation Mode). No real payment is required in this demonstration.`);
+        });
+      });
+
+      renderCenters();
+    });
+  </script>
+</body>
+</html>

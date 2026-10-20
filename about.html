@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Voltcycle — Independent Testing & Scoring Methodology</title>
+  <meta name="description" content="Learn how Voltcycle independently tests electric bikes on standardized dyno benches and 20-mile urban commuter loops with total editorial integrity.">
+  
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%23CCFF00'/><path d='M50 15 L25 55 L48 55 L42 85 L75 45 L52 45 Z' fill='%23000'/></svg>">
+
+  <!-- Phosphor Icons CDN -->
+  <script src="https://unpkg.com/@phosphor-icons/web"></script>
+  
+  <!-- GA Placeholder -->
+  <!-- GA_TAG -->
+
+  <!-- Global Stylesheet -->
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <!-- Skip to Content Accessibility Link -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- =========================================================================
+       GLOBAL NAVBAR (Identical across all 4 pages)
+       ========================================================================= -->
+  <header class="site-header">
+    <div class="container navbar">
+      <a href="index.html" class="nav-brand" aria-label="Voltcycle Homepage">
+        <span class="brand-mark"><i class="ph-bold ph-lightning"></i></span>
+        <span>VOLT<span class="brand-accent">CYCLE</span></span>
+      </a>
+
+      <!-- Desktop Nav Items (> 1024px) -->
+      <nav class="nav-desktop" aria-label="Main Navigation">
+        <ul class="nav-menu">
+          <li class="nav-item">
+            <a href="index.html" class="nav-link">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="about.html" class="nav-link active">About</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a href="services.html" class="nav-link" aria-haspopup="true" aria-expanded="false">
+              Services <i class="ph ph-caret-down"></i>
+            </a>
+            <ul class="dropdown-menu">
+              <li>
+                <a href="services.html#guides" class="dropdown-link">
+                  <i class="ph ph-notebook"></i> Buying Guides
+                </a>
+              </li>
+              <li>
+                <a href="services.html#comparisons" class="dropdown-link">
+                  <i class="ph ph-scales"></i> Model Comparisons
+                </a>
+              </li>
+              <li>
+                <a href="services.html#test-ride" class="dropdown-link">
+                  <i class="ph ph-map-pin"></i> Test-Ride Finder
+                </a>
+              </li>
+              <li>
+                <a href="services.html#safety" class="dropdown-link">
+                  <i class="ph ph-shield-check"></i> Maintenance & Safety
+                </a>
+              </li>
+              <li>
+                <a href="services.html#plans" class="dropdown-link">
+                  <i class="ph ph-star"></i> Premium Plans
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a href="contact.html" class="nav-link">Contact</a>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- Nav Actions -->
+      <div class="nav-actions">
+        <a href="login.html" class="btn btn-primary btn-sm"><i class="ph-bold ph-sign-in"></i> Log in</a>
+        <button type="button" class="hamburger-btn" id="hamburgerBtn" aria-label="Open mobile navigation menu" aria-expanded="false">
+          <i class="ph ph-list"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Slide Drawer (<= 1024px) -->
+  <div class="nav-drawer-backdrop" id="drawerBackdrop"></div>
+  <aside class="nav-drawer" id="navDrawer" aria-label="Mobile Navigation Drawer">
+    <div class="drawer-header">
+      <div class="nav-brand">
+        <span class="brand-mark"><i class="ph-bold ph-lightning"></i></span>
+        <span>VOLT<span class="brand-accent">CYCLE</span></span>
+      </div>
+      <button type="button" class="drawer-close-btn" id="drawerCloseBtn" aria-label="Close menu">
+        <i class="ph ph-x"></i>
+      </button>
+    </div>
+
+    <ul class="drawer-links">
+      <li><a href="index.html" class="drawer-link">Home</a></li>
+      <li><a href="about.html" class="drawer-link active">About Us</a></li>
+      <li>
+        <button type="button" class="drawer-link drawer-accordion-btn" aria-expanded="false">
+          <span>Services</span> <i class="ph ph-caret-down"></i>
+        </button>
+        <ul class="drawer-sublinks">
+          <li><a href="services.html#guides" class="drawer-sublink"><i class="ph ph-notebook"></i> Buying Guides</a></li>
+          <li><a href="services.html#comparisons" class="drawer-sublink"><i class="ph ph-scales"></i> Comparisons</a></li>
+          <li><a href="services.html#test-ride" class="drawer-sublink"><i class="ph ph-map-pin"></i> Test-Ride Centers</a></li>
+          <li><a href="services.html#safety" class="drawer-sublink"><i class="ph ph-shield-check"></i> Safety Tips</a></li>
+          <li><a href="services.html#plans" class="drawer-sublink"><i class="ph ph-star"></i> Premium Plans</a></li>
+        </ul>
+      </li>
+      <li><a href="contact.html" class="drawer-link">Contact & Track Studio</a></li>
+    </ul>
+
+    <div style="margin-top: auto; padding-top: var(--space-6); border-top: 1px solid var(--color-primary-border);">
+      <a href="login.html" class="btn btn-primary" style="width: 100%;"><i class="ph-bold ph-sign-in"></i> Log in</a>
+      <a href="signup.html" class="btn btn-secondary" style="width: 100%; margin-top: var(--space-3);">Create account</a>
+    </div>
+  </aside>
+
+  <!-- =========================================================================
+       MAIN CONTENT: ABOUT PAGE (Minimum 4 Sections)
+       ========================================================================= -->
+  <main id="main-content">
+
+    <!-- -----------------------------------------------------------------------
+         SECTION 1: STORY & MISSION
+         ----------------------------------------------------------------------- -->
+    <section class="page-hero page-hero--about">
+      <div class="hero-floaters" aria-hidden="true">
+        <span class="float-orb float-orb--1"></span>
+        <span class="float-orb float-orb--2"></span>
+        <span class="float-chip float-chip--1"><i class="ph-duotone ph-flask"></i></span>
+        <span class="float-chip float-chip--2"><i class="ph-duotone ph-gauge"></i></span>
+        <span class="float-chip float-chip--3"><i class="ph-duotone ph-mountains"></i></span>
+        <span class="float-chip float-chip--4"><i class="ph-duotone ph-battery-charging"></i></span>
+      </div>
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag"><i class="ph ph-flag"></i> Our Origin Story</span>
+          <h1>Engineered For Truth In Electric Mobility</h1>
+          <p class="section-subtitle">
+            Founded by aerospace engineers and daily bicycle commuters frustrated by fictitious 80-mile manufacturer battery claims.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="about-hero-section">
+      <div class="container">
+
+        <div class="story-card">
+          <div>
+            <h2 style="font-size:1.8rem; margin-bottom:var(--space-3); text-align:left;">Why We Built The Voltcycle Proving Ground</h2>
+            <p style="font-size:0.95rem; color:var(--color-secondary); margin-bottom:var(--space-4); line-height:1.65;">
+              In 2023, our founding team tested 14 commercial e-bikes advertised with "Up to 60 miles of range." Riding through real city traffic with brief 10% elevation climbs and winter winds, not a single bike surpassed 34 miles.
+            </p>
+            <p style="font-size:0.95rem; color:var(--color-secondary); margin-bottom:var(--space-4); line-height:1.65;">
+              Buyers were getting stranded mid-commute with 65-pound dead weights. Voltcycle was created to build a repeatable, laboratory-grade testing benchmark that reflects real life: stoplights, cargo weight, cold lithium chemistry, and honest motor torque measurements.
+            </p>
+            <div class="story-stats">
+              <div>
+                <strong style="font-size:1.6rem; color:var(--color-accent); font-family:var(--font-heading); display:block;">48+</strong>
+                <span style="font-size:0.75rem; color:var(--color-secondary-dim); text-transform:uppercase;">E-Bikes Tested</span>
+              </div>
+              <div>
+                <strong style="font-size:1.6rem; color:var(--color-accent); font-family:var(--font-heading); display:block;">100%</strong>
+                <span style="font-size:0.75rem; color:var(--color-secondary-dim); text-transform:uppercase;">Self-Funded Gear</span>
+              </div>
+              <div>
+                <strong style="font-size:1.6rem; color:var(--color-accent); font-family:var(--font-heading); display:block;">2026</strong>
+                <span style="font-size:0.75rem; color:var(--color-secondary-dim); text-transform:uppercase;">Telemetry Standard</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="story-media">
+            <img src="https://images.unsplash.com/photo-1541625602330-2277a4c46182?auto=format&fit=crop&w=1200&q=80" alt="Voltcycle testers riding a real-world coastal range loop" loading="lazy">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- -----------------------------------------------------------------------
+         SECTION 2: TEST RIDERS TEAM
+         ----------------------------------------------------------------------- -->
+    <section id="team" style="background:var(--color-primary-card);">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag"><i class="ph ph-users"></i> The Test Collective</span>
+          <h2>Meet Our Proving Ground Test Riders</h2>
+          <p class="section-subtitle">
+            Our evaluations come from professional bike mechanics, cargo parents, and mountain trail guides who push hardware to its structural limit.
+          </p>
+        </div>
+
+        <div class="riders-grid">
+          <!-- Rider 1 -->
+          <article class="rider-card">
+            <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&crop=faces&facepad=3&w=320&h=320&q=80" alt="Dr. Maya Lindqvist, Lead Powertrain Analyst" class="rider-img" loading="lazy">
+            <h3 style="font-size:1.2rem; margin-bottom:2px;">Dr. Maya Lindqvist</h3>
+            <span style="font-size:0.8rem; color:var(--color-accent); font-family:var(--font-heading); display:block; margin-bottom:var(--space-3);">Lead Powertrain Analyst</span>
+            <p style="font-size:0.85rem; color:var(--color-secondary); line-height:1.55; margin-bottom:var(--space-3);">
+              Former battery thermal engineer specializing in lithium cell degradation and controller efficiency at sub-zero temperatures.
+            </p>
+            <div style="font-size:0.75rem; color:var(--color-secondary-dim); border-top:1px solid var(--color-primary-border); padding-top:var(--space-2);">
+              Logged: <strong>5,400+ Test Miles</strong> · Specialty: Battery & BMS
+            </div>
+          </article>
+
+          <!-- Rider 2 -->
+          <article class="rider-card">
+            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&crop=faces&facepad=3&w=320&h=320&q=80" alt="Julian 'Jax' Mercer, eMTB Trail Director" class="rider-img" loading="lazy">
+            <h3 style="font-size:1.2rem; margin-bottom:2px;">Julian 'Jax' Mercer</h3>
+            <span style="font-size:0.8rem; color:var(--color-accent); font-family:var(--font-heading); display:block; margin-bottom:var(--space-3);">eMTB Trail Director</span>
+            <p style="font-size:0.85rem; color:var(--color-secondary); line-height:1.55; margin-bottom:var(--space-3);">
+              Enduro racer and frame structural inspector. Takes mountain models onto 25% rocky grades across Colorado and British Columbia.
+            </p>
+            <div style="font-size:0.75rem; color:var(--color-secondary-dim); border-top:1px solid var(--color-primary-border); padding-top:var(--space-2);">
+              Logged: <strong>8,900+ Test Miles</strong> · Specialty: High-Torque Climbing
+            </div>
+          </article>
+
+          <!-- Rider 3 -->
+          <article class="rider-card">
+            <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&crop=faces&facepad=3&w=320&h=320&q=80" alt="Kofi Adewale, Urban Utility & Cargo Specialist" class="rider-img" loading="lazy">
+            <h3 style="font-size:1.2rem; margin-bottom:2px;">Kofi Adewale</h3>
+            <span style="font-size:0.8rem; color:var(--color-accent); font-family:var(--font-heading); display:block; margin-bottom:var(--space-3);">Urban Utility Specialist</span>
+            <p style="font-size:0.85rem; color:var(--color-secondary); line-height:1.55; margin-bottom:var(--space-3);">
+              Father of two and car-free urban commuter. Evaluates braking distance with 150 lbs of cargo payload, kickstand stability, and child safety.
+            </p>
+            <div style="font-size:0.75rem; color:var(--color-secondary-dim); border-top:1px solid var(--color-primary-border); padding-top:var(--space-2);">
+              Logged: <strong>6,200+ Test Miles</strong> · Specialty: Heavy Payload & Brakes
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- -----------------------------------------------------------------------
+         SECTION 3: REVIEW METHODOLOGY (#methodology)
+         4 scoring categories, /10 scale, test routes & protocol
+         ----------------------------------------------------------------------- -->
+    <section id="methodology">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag"><i class="ph ph-chart-polar"></i> Standardized Lab Protocol</span>
+          <h2>Our 10-Point Scoring Methodology</h2>
+          <p class="section-subtitle">
+            Every bike is scored on an absolute /10 scale across four distinct pillars. We do not curve grades to keep manufacturers comfortable.
+          </p>
+        </div>
+
+        <div class="methodology-grid">
+          <!-- Pillar 1 -->
+          <div class="method-card">
+            <i class="ph-bold ph-bicycle"></i>
+            <h3 style="font-size:1.15rem; margin-bottom:var(--space-2);">1. Ride Quality (25%)</h3>
+            <p style="font-size:0.84rem; color:var(--color-secondary); line-height:1.55;">
+              Evaluates torque sensor latency, cockpit ergonomics, vibration damping over cobbles, cornering balance, and motor acceleration smoothness.
+            </p>
+            <div style="margin-top:var(--space-3); font-size:0.75rem; color:var(--color-accent);">
+              Benchmark: Natural pedal response
+            </div>
+          </div>
+
+          <!-- Pillar 2 -->
+          <div class="method-card">
+            <i class="ph-bold ph-battery-charging"></i>
+            <h3 style="font-size:1.15rem; margin-bottom:var(--space-2);">2. Battery & Range (30%)</h3>
+            <p style="font-size:0.84rem; color:var(--color-secondary); line-height:1.55;">
+              Tested on our 20-mile urban elevation circuit at fixed 200W rider cadence output. Measured in Watt-Hours consumed per mile (Wh/mi).
+            </p>
+            <div style="margin-top:var(--space-3); font-size:0.75rem; color:var(--color-accent);">
+              Benchmark: Wh/mi consumption margin
+            </div>
+          </div>
+
+          <!-- Pillar 3 -->
+          <div class="method-card">
+            <i class="ph-bold ph-wrench"></i>
+            <h3 style="font-size:1.15rem; margin-bottom:var(--space-2);">3. Frame & Build (25%)</h3>
+            <p style="font-size:0.84rem; color:var(--color-secondary); line-height:1.55;">
+              Inspects hydroformed weld consistency, hydraulic brake stopping distance from 20 mph, cable ingress seals, and kickstand rigidity.
+            </p>
+            <div style="margin-top:var(--space-3); font-size:0.75rem; color:var(--color-accent);">
+              Benchmark: Wet braking & IPX6 seals
+            </div>
+          </div>
+
+          <!-- Pillar 4 -->
+          <div class="method-card">
+            <i class="ph-bold ph-currency-dollar"></i>
+            <h3 style="font-size:1.15rem; margin-bottom:var(--space-2);">4. Value & Support (20%)</h3>
+            <p style="font-size:0.84rem; color:var(--color-secondary); line-height:1.55;">
+              Components included as standard (fenders, lights, rack), replacement battery costs, warranty terms (2+ years), and spare parts availability.
+            </p>
+            <div style="margin-top:var(--space-3); font-size:0.75rem; color:var(--color-accent);">
+              Benchmark: Total cost of 3-year ownership
+            </div>
+          </div>
+        </div>
+
+        <!-- Protocol Flow Diagram Block -->
+        <div style="margin-top:var(--space-8); background:var(--color-primary-surface); border:1px solid var(--color-primary-border); border-radius:var(--radius-global); padding:var(--space-6);">
+          <h4 style="font-size:1.05rem; text-align:center; margin-bottom:var(--space-4);"><i class="ph ph-path" style="color:var(--color-accent);"></i> The 3-Stage Test Circuit</h4>
+          
+          <div class="circuit-grid">
+            <div style="background:var(--color-primary); padding:var(--space-4); border-radius:var(--radius-global);">
+              <span class="brand-mark" style="margin:0 auto var(--space-2) auto;">1</span>
+              <strong style="display:block; color:#FFF; font-size:0.95rem;">Bench Dyno Test</strong>
+              <p style="font-size:0.8rem; color:var(--color-secondary); margin-top:4px;">Measures motor continuous vs peak wattage output and thermal throttling curves under heavy electric load.</p>
+            </div>
+
+            <div style="background:var(--color-primary); padding:var(--space-4); border-radius:var(--radius-global);">
+              <span class="brand-mark" style="margin:0 auto var(--space-2) auto;">2</span>
+              <strong style="display:block; color:#FFF; font-size:0.95rem;">20-Mile Real Route</strong>
+              <p style="font-size:0.8rem; color:var(--color-secondary); margin-top:4px;">Controlled loop containing 650 ft of total elevation climb, 18 street stoplights, and mixed gravel transitions.</p>
+            </div>
+
+            <div style="background:var(--color-primary); padding:var(--space-4); border-radius:var(--radius-global);">
+              <span class="brand-mark" style="margin:0 auto var(--space-2) auto;">3</span>
+              <strong style="display:block; color:#FFF; font-size:0.95rem;">Braking & Rain Test</strong>
+              <p style="font-size:0.8rem; color:var(--color-secondary); margin-top:4px;">Full emergency stopping from 20 mph on both dry tarmac and water-soaked concrete to record stopping distance in feet.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- -----------------------------------------------------------------------
+         SECTION 4: INDEPENDENCE STATEMENT & AFFILIATE DISCLOSURE
+         ----------------------------------------------------------------------- -->
+    <section id="independence" style="background:var(--color-primary-card);">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag"><i class="ph ph-shield-check"></i> Uncompromising Integrity</span>
+          <h2>Editorial Independence Statement</h2>
+          <p class="section-subtitle">
+            How we fund our test facility without compromising review integrity or accepting corporate sponsorships.
+          </p>
+        </div>
+
+        <div style="max-width:860px; margin:0 auto; background:var(--color-primary-surface); border:1px solid var(--color-primary-border); border-left:4px solid var(--color-accent); border-radius:var(--radius-global); padding:var(--space-8); box-shadow:var(--shadow-global);">
+          <div style="display:flex; align-items:flex-start; gap:var(--space-4); margin-bottom:var(--space-4);">
+            <i class="ph-bold ph-certificate" style="font-size:2rem; color:var(--color-accent); flex-shrink:0;"></i>
+            <div>
+              <h3 style="font-size:1.25rem; margin-bottom:var(--space-2);">The Voltcycle Editorial Pledge</h3>
+              <p style="font-size:0.9rem; color:var(--color-secondary); line-height:1.65; margin-bottom:var(--space-3);">
+                <strong>1. No Paid Reviews:</strong> We never accept payment, free hotel junkets, or sponsored perks in exchange for reviewing an electric bicycle. If a bike has poor cable seals or an underpowered cadence sensor, our review says so unequivocally.
+              </p>
+              <p style="font-size:0.9rem; color:var(--color-secondary); line-height:1.65; margin-bottom:var(--space-3);">
+                <strong>2. Transparent Affiliate Revenue:</strong> When you click on a "Check price" button and purchase a bike, we may receive an affiliate referral commission from the retailer. This comes at zero extra cost to you. Affiliate links never influence our score rankings or verdict recommendations.
+              </p>
+              <p style="font-size:0.9rem; color:var(--color-secondary); line-height:1.65;">
+                <strong>3. Regular Re-Testing & Updates:</strong> Firmware updates frequently alter motor power curves and battery management software. We re-test long-term fleet bikes every 6 months and display the exact last-tested timestamp on every model card.
+              </p>
+            </div>
+          </div>
+
+          <div style="padding-top:var(--space-4); border-top:1px solid var(--color-primary-border); display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:var(--space-3); font-size:0.8rem; color:var(--color-secondary-dim);">
+            <span>Last Editorial Audit: <strong>October 2026</strong></span>
+            <span>Version: <strong>Voltcycle Standard v4.2</strong></span>
+            <span>Affiliate Status: <strong>Open Disclosure Policy</strong></span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- -----------------------------------------------------------------------
+         SECTION 5: CTA SECTION
+         ----------------------------------------------------------------------- -->
+    <section class="cta-banner-section">
+      <div class="container cta-box">
+        <span class="section-tag"><i class="ph-bold ph-lightning"></i> Put Our Data To Work</span>
+        <h2>Find The Right Bike For Your Daily Route</h2>
+        <p class="section-subtitle" style="margin-bottom:var(--space-6);">
+          Now that you know how we test, calculate your estimated battery range or compare our top-scoring models side-by-side.
+        </p>
+        <div style="display:flex; justify-content:center; gap:var(--space-4); flex-wrap:wrap;">
+          <a href="index.html#matcher" class="btn btn-primary"><i class="ph-bold ph-calculator"></i> Launch Range Matcher</a>
+          <a href="index.html#models" class="btn btn-secondary"><i class="ph ph-sliders"></i> Browse Tested Models</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- =========================================================================
+       GLOBAL FOOTER (Identical across all 4 pages)
+       ========================================================================= -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand-col">
+          <a href="index.html" class="nav-brand">
+            <span class="brand-mark"><i class="ph-bold ph-lightning"></i></span>
+            <span>VOLT<span class="brand-accent">CYCLE</span></span>
+          </a>
+          <p>
+            Independent laboratory testing, dyno benchmarks, and verified rider telemetry. Helping cyclists discover high-performing electric bicycles with honest real-world range expectations.
+          </p>
+          <div class="social-row" aria-label="Follow Voltcycle">
+            <a href="#" class="social-btn" aria-label="Voltcycle on Instagram" title="Instagram"><i class="ph ph-instagram-logo"></i></a>
+            <a href="#" class="social-btn" aria-label="Voltcycle on YouTube" title="YouTube"><i class="ph ph-youtube-logo"></i></a>
+            <a href="#" class="social-btn" aria-label="Voltcycle on X" title="X"><i class="ph ph-x-logo"></i></a>
+            <a href="#" class="social-btn" aria-label="Voltcycle on Facebook" title="Facebook"><i class="ph ph-facebook-logo"></i></a>
+            <a href="#" class="social-btn" aria-label="Voltcycle on LinkedIn" title="LinkedIn"><i class="ph ph-linkedin-logo"></i></a>
+            <a href="#" class="social-btn" aria-label="Voltcycle on TikTok" title="TikTok"><i class="ph ph-tiktok-logo"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-links-col">
+          <h4>Navigation</h4>
+          <ul class="footer-links-list">
+            <li><a href="index.html" class="footer-link">Home</a></li>
+            <li><a href="about.html" class="footer-link">About Our Lab</a></li>
+            <li><a href="services.html" class="footer-link">Services & Guides</a></li>
+            <li><a href="contact.html" class="footer-link">Contact & Studio</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-links-col">
+          <h4>Interactive Tools</h4>
+          <ul class="footer-links-list">
+            <li><a href="index.html#matcher" class="footer-link">Range & Budget Matcher</a></li>
+            <li><a href="index.html#models" class="footer-link">Top Models Grid</a></li>
+            <li><a href="index.html#explainer" class="footer-link">Motor & Battery Explainer</a></li>
+            <li><a href="services.html#test-ride" class="footer-link">Test-Ride Finder</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-links-col">
+          <h4>Editorial & Legal</h4>
+          <ul class="footer-links-list">
+            <li><a href="about.html#methodology" class="footer-link">Scoring Methodology</a></li>
+            <li><a href="services.html#safety" class="footer-link">Battery Charging Safety</a></li>
+            <li><a href="services.html#plans" class="footer-link">Premium Advisory Plans</a></li>
+            <li><a href="contact.html" class="footer-link">Submit Model For Test</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Mandatory Affiliate & Demo Disclosure Box -->
+      <div class="footer-disclosure-box">
+        <!-- AFFILIATE_LINK -->
+        <strong>Editorial Independence & Affiliate Disclosure:</strong> Some links on this site may be affiliate links. Voltcycle earns a referral commission when you purchase through partner links at zero extra cost to you. All test scores and ratings remain strictly independent. Voltcycle is a demo brand; all models, prices, scores, specifications, and reviews are placeholder data for evaluation purposes.
+      </div>
+
+      <div class="footer-bottom">
+        <div>&copy; 2026 Voltcycle. All rights reserved. Built with plain HTML/CSS/JS.</div>
+        <div style="display:flex; gap:var(--space-4);">
+          <span>Privacy Policy</span>
+          <span>Terms of Service</span>
+          <span>Affiliate Policy</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

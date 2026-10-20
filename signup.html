@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Create Account — Voltcycle</title>
+  <meta name="description" content="Create a free Voltcycle account to save range matches, comparisons and test-ride bookings.">
+  <meta name="robots" content="noindex">
+
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%23CCFF00'/><path d='M50 15 L25 55 L48 55 L42 85 L75 45 L52 45 Z' fill='%23000'/></svg>">
+  <script src="https://unpkg.com/@phosphor-icons/web"></script>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/auth.css">
+</head>
+<body class="auth-body">
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <div class="auth-shell">
+    <!-- Brand / visual panel -->
+    <aside class="auth-visual" aria-hidden="true">
+      <img class="auth-visual-img" src="https://images.unsplash.com/photo-1571068316344-75bc76f77890?auto=format&fit=crop&w=1400&q=80" alt="">
+      <a href="index.html" class="nav-brand" tabindex="-1">
+        <span class="brand-mark"><i class="ph-bold ph-lightning"></i></span>
+        <span>VOLT<span class="brand-accent">CYCLE</span></span>
+      </a>
+      <div class="auth-quote">
+        <blockquote>“Matched us to a cargo bike that <em>replaced our second car.</em> Best decision we made all year.”</blockquote>
+        <div class="auth-quote-author">
+          <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&crop=faces&facepad=3&w=120&h=120&q=80" alt="">
+          <div><strong>David K.</strong><span>Cargo family rider · 2,400 mi logged</span></div>
+        </div>
+        <div class="auth-stats">
+          <div><strong>48<span>+</span></strong><small>Bikes tested</small></div>
+          <div><strong>12.4k<span>mi</span></strong><small>Test loops</small></div>
+          <div><strong>0<span>$</span></strong><small>Paid reviews</small></div>
+        </div>
+      </div>
+    </aside>
+
+    <!-- Form panel -->
+    <main class="auth-panel" id="main-content">
+      <div class="auth-topbar">
+        <a href="index.html" class="nav-brand" aria-label="Voltcycle Homepage">
+          <span class="brand-mark"><i class="ph-bold ph-lightning"></i></span>
+          <span>VOLT<span class="brand-accent">CYCLE</span></span>
+        </a>
+      </div>
+
+      <div class="auth-card">
+        <div class="auth-form-wrap">
+          <span class="section-tag"><i class="ph-bold ph-sparkle"></i> Free forever</span>
+          <h1>Ride <em>smarter.</em></h1>
+          <p class="auth-sub">Save your range matches, build side-by-side comparisons and book test rides at partner tracks.</p>
+
+          <div class="auth-social">
+            <button type="button" class="auth-social-btn" data-provider="Google">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="#4285F4" d="M23.49 12.27c0-.79-.07-1.54-.19-2.27H12v4.51h6.47c-.29 1.48-1.14 2.73-2.4 3.58v3h3.86c2.26-2.09 3.56-5.17 3.56-8.82z"/><path fill="#34A853" d="M12 24c3.24 0 5.95-1.08 7.93-2.91l-3.86-3c-1.08.72-2.45 1.16-4.07 1.16-3.13 0-5.78-2.11-6.73-4.96H1.29v3.09C3.26 21.3 7.31 24 12 24z"/><path fill="#FBBC05" d="M5.27 14.29c-.25-.72-.38-1.49-.38-2.29s.14-1.57.38-2.29V6.62H1.29C.47 8.24 0 10.06 0 12s.47 3.76 1.29 5.38l3.98-3.09z"/><path fill="#EA4335" d="M12 4.75c1.77 0 3.35.61 4.6 1.8l3.42-3.42C17.95 1.19 15.24 0 12 0 7.31 0 3.26 2.7 1.29 6.62l3.98 3.09C6.22 6.86 8.87 4.75 12 4.75z"/></svg>
+              Google
+            </button>
+            <button type="button" class="auth-social-btn" data-provider="Apple">
+              <i class="ph-fill ph-apple-logo"></i> Apple
+            </button>
+          </div>
+  
+          <div class="auth-divider">or with email</div>
+
+          <form class="auth-form" id="signupForm" novalidate>
+            <div class="auth-alert" role="status" aria-live="polite"><i class="ph-bold ph-info"></i><span></span></div>
+
+            <div class="auth-row">
+              <div class="auth-field">
+                <label for="signupFirst">First name</label>
+                <div class="auth-input-wrap">
+                  <i class="ph ph-user"></i>
+                  <input type="text" id="signupFirst" class="form-control" placeholder="Alex" autocomplete="given-name" required>
+                </div>
+                <div class="auth-error"><i class="ph-bold ph-warning-circle"></i><span></span></div>
+              </div>
+              <div class="auth-field">
+                <label for="signupLast">Last name</label>
+                <div class="auth-input-wrap">
+                  <i class="ph ph-user"></i>
+                  <input type="text" id="signupLast" class="form-control" placeholder="Rivera" autocomplete="family-name" required>
+                </div>
+                <div class="auth-error"><i class="ph-bold ph-warning-circle"></i><span></span></div>
+              </div>
+            </div>
+
+            <div class="auth-field">
+              <label for="signupEmail">Email</label>
+              <div class="auth-input-wrap">
+                <i class="ph ph-envelope-simple"></i>
+                <input type="email" id="signupEmail" class="form-control" placeholder="you@example.com" autocomplete="email" required>
+              </div>
+              <div class="auth-error"><i class="ph-bold ph-warning-circle"></i><span></span></div>
+            </div>
+
+            <div class="auth-field">
+              <label for="signupPassword">Password</label>
+              <div class="auth-input-wrap has-toggle">
+                <i class="ph ph-lock-simple"></i>
+                <input type="password" id="signupPassword" class="form-control" placeholder="Create a password" autocomplete="new-password" aria-describedby="pwHints" required>
+                <button type="button" class="auth-toggle-pw" aria-label="Show password"><i class="ph ph-eye"></i></button>
+              </div>
+              <div class="pw-meter" id="pwMeter" data-score="0" aria-hidden="true"><span></span><span></span><span></span><span></span></div>
+              <ul class="pw-hints" id="pwHints">
+                <li data-rule="length">8+ characters</li>
+                <li data-rule="case">Upper &amp; lower case</li>
+                <li data-rule="number">A number</li>
+                <li data-rule="symbol">A symbol</li>
+              </ul>
+              <div class="auth-error"><i class="ph-bold ph-warning-circle"></i><span></span></div>
+            </div>
+
+            <fieldset class="auth-field" style="border:0;">
+              <legend class="auth-label-row" style="width:100%; margin-bottom:8px;">What do you ride? <span style="color:var(--color-secondary-dim); font-weight:400;">Optional</span></legend>
+              <div class="auth-chips">
+                <label class="auth-chip"><input type="checkbox" name="interest" value="commuter"><span><i class="ph ph-buildings"></i> Commuter</span></label>
+                <label class="auth-chip"><input type="checkbox" name="interest" value="mountain"><span><i class="ph ph-mountains"></i> eMTB</span></label>
+                <label class="auth-chip"><input type="checkbox" name="interest" value="folding"><span><i class="ph ph-arrows-in-simple"></i> Folding</span></label>
+                <label class="auth-chip"><input type="checkbox" name="interest" value="cargo"><span><i class="ph ph-package"></i> Cargo</span></label>
+              </div>
+            </fieldset>
+
+            <label class="auth-check">
+              <input type="checkbox" id="signupTerms" required>
+              <span>I agree to the <a href="about.html#independence">Terms</a> and <a href="about.html#independence">Privacy Policy</a>.</span>
+            </label>
+            <label class="auth-check">
+              <input type="checkbox" id="signupNews">
+              <span>Send me new lab results and range tests (about twice a month).</span>
+            </label>
+
+            <button type="submit" class="btn btn-primary auth-submit">Create account <i class="ph-bold ph-arrow-right"></i></button>
+          </form>
+
+          <p class="auth-foot">Already have an account? <a href="login.html">Sign in</a></p>
+        </div>
+
+        <div class="auth-success" id="authSuccess" role="status" aria-live="polite">
+          <div class="auth-success-icon"><i class="ph-bold ph-envelope-simple-open"></i></div>
+          <h2>Check your inbox</h2>
+          <p>We sent a confirmation link to <strong id="successEmail"></strong>. Click it to activate your account.</p>
+          <a href="login.html" class="btn btn-primary auth-submit">Continue to sign in <i class="ph-bold ph-arrow-right"></i></a>
+          <p class="auth-foot">Wrong email? <a href="signup.html">Start over</a></p>
+        </div>
+      </div>
+
+      <div class="auth-legal">
+        <span>&copy; 2026 Voltcycle Labs</span>
+        <nav aria-label="Legal"><a href="about.html#independence">Privacy</a><a href="about.html#independence">Terms</a><a href="contact.html">Help</a></nav>
+      </div>
+    </main>
+  </div>
+
+  <script src="assets/js/auth.js"></script>
+</body>
+</html>
