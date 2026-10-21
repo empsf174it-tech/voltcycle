@@ -295,9 +295,18 @@
 /* Mobile/tablet: give the form breathing room below the logo bar */
 @media (max-width: 1024px) {
   .auth-topbar { padding-bottom: 20px; border-bottom: 1px solid rgba(255,255,255,.06); }
-  .auth-card { margin-top: 0; padding-top: 48px; }
+  .auth-card { padding-top: 48px; }
+}
+/* Phones: keep the card under the logo bar instead of vertically centred */
+@media (max-width: 767px) {
+  .auth-card { margin-top: 0; }
 }
 @media (max-width: 480px) {
   .auth-card { padding-top: 40px; }
   .auth-card .section-tag { margin-bottom: 20px; }
 }
+
+/* Remember me + forgot-password on one row */
+.auth-options { display: flex; align-items: center; justify-content: space-between; gap: 12px; }
+.auth-forgot { font-size: .8rem; font-weight: 500; color: var(--color-secondary); transition: color .2s; }
+.auth-forgot:hover { color: var(--color-accent); }
